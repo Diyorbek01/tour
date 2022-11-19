@@ -38,6 +38,7 @@ INSTALLED_APPS = [
 
     'rest_framework',
     'corsheaders',
+    'paymeuz',
 
     'main',
     'payment'
@@ -105,6 +106,16 @@ AUTH_PASSWORD_VALIDATORS = [
 CORS_ORIGIN_ALLOW_ALL = True
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
+
+PAYME_SETTINGS = {
+    'DEBUG': False,  # True - test mode, False - production mode
+    'ID': '637625fd185c22ee89781c0a',
+    'SECRET_KEY': 'sDu2#OdKpSXYSdEwAcT6KkIHm0wQn?H?t@Qq',
+    'ACCOUNTS': {
+        'KEY_1': 'order_id',
+        'KEY_2': '',
+    }
+}
 
 LANGUAGE_CODE = 'en-us'
 
